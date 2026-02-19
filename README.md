@@ -1,73 +1,63 @@
-# React + TypeScript + Vite
+# Mayfair Biotech - Operational Excellence
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premier digital platform for **Mayfair Biotech**, a leading bio-manufacturing hub in West Africa. This project showcases a **Calm & Professional** aesthetic tailored for industrial scale and reliability, emphasizing operational transparency and essential goods distribution.
 
-Currently, two official plugins are available:
+## 🚀 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository contains the source code for the Mayfair Biotech landing page and product catalog. The design philosophy moves away from generic "high-tech" visuals to a grounded, trustworthy corporate identity. It features a clean, white-based theme with Deep Slate and Teal accents.
 
-## React Compiler
+### Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Calm & Professional Theme**: Removed aggressive gradients and animations in favor of solid colors (`#FFFFFF`, `#0F172A`), clean typography (Inter), and subtle interactions.
+*   **Operational Excellence ("Genesis")**: A dedicated section highlighting key performance metrics:
+    *   **98% Local Sourcing strategy**
+    *   **<0.1% Variance in production**
+    *   **24/7 Operational Support** in Accra
+*   **Essential Goods Inventory**: A mobile-responsive catalog featuring real-world hygiene products:
+    *   Ultra-Soft Sanitary Pads
+    *   Antibacterial Soap
+    *   Premium Face Tissues
+    *   Hand Sanitizer
+*   **Mobile-First UX**:
+    *   **Adaptive Grid**: Products display in a 2-column layout on mobile for easy scanning.
+    *   **Robust Navigation**: Full-screen overlay menu with locked body scrolling and generous touch targets (min 44px).
+    *   **Quick Add**: Touch-friendly "Add to Cart" interactions.
 
-## Expanding the ESLint configuration
+## 🛠️ Technology Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+*   **Frontend**: React 19 (TypeScript)
+*   **Build Tool**: Vite
+*   **Styling**: Tailwind CSS v4 (configured via CSS variables)
+*   **Animations**: Framer Motion (used subtly for professional entrances)
+*   **Icons**: Lucide React
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/sasusavage/biotech.git
+    cd biotech
+    ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # Note: Requires Node.js 18+
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📱 Mobile Optimization
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The interface is fully optimized for mobile devices, featuring:
+*   Standardized touch targets.
+*   Prevented background scrolling when menus are open.
+*   High-contrast text for readability in various lighting conditions.
+
+## 📄 License
+
+Proprietary software for Mayfair Biotech Ltd. All rights reserved.
