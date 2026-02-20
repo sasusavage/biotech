@@ -3,9 +3,20 @@ import { ArrowRight, Microscope } from 'lucide-react';
 
 export default function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center pt-24 overflow-hidden bg-slate-50 text-slate-900 border-b border-slate-200">
-            {/* Calm Grid Pattern */}
-            <div className="absolute inset-0 pointer-events-none opacity-[0.4]">
+        <section className="relative min-h-screen flex items-center pt-24 overflow-hidden bg-white border-b border-slate-200">
+            {/* Mobile Background Image (Visible only on mobile) */}
+            <div className="absolute inset-0 lg:hidden">
+                <img
+                    src="/images/bio.jpg"
+                    alt=""
+                    className="w-full h-full object-cover"
+                />
+                {/* Light overlay for readability with slate text */}
+                <div className="absolute inset-0 bg-white/90 backdrop-blur-[2px]" />
+            </div>
+
+            {/* Calm Grid Pattern (Desktop) */}
+            <div className="absolute inset-0 pointer-events-none opacity-[0.4] hidden lg:block">
                 <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:40px_40px]" />
             </div>
 
@@ -47,11 +58,12 @@ export default function Hero() {
                         </div>
                     </motion.div>
 
+                    {/* Desktop Side Image (Hidden on mobile) */}
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1, delay: 0.2 }}
-                        className="relative mt-12 lg:mt-0"
+                        className="relative hidden lg:block"
                     >
                         <div className="relative rounded-2xl overflow-hidden bg-white shadow-xl shadow-slate-200 border border-slate-100 aspect-[4/3]">
                             <img
