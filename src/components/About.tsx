@@ -56,7 +56,7 @@ export default function About() {
                             {/* Hero Image Placeholder */}
                             <div className="absolute inset-0 bg-slate-100">
                                 <img
-                                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2070"
+                                    src="/images/about.jpg"
                                     alt="Operational Excellence"
                                     className="w-full h-full object-cover opacity-90"
                                 />

@@ -54,35 +54,11 @@ export default function Hero() {
                         className="relative hidden lg:block"
                     >
                         <div className="relative rounded-2xl overflow-hidden bg-white shadow-xl shadow-slate-200 border border-slate-100 aspect-[4/3]">
-                            <div className="absolute inset-0 bg-slate-50 flex items-center justify-center p-12">
-                                <div className="grid grid-cols-2 gap-4 w-full h-full opacity-80">
-                                    <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between">
-                                        <div className="w-10 h-10 bg-teal-50 rounded-lg flex items-center justify-center text-teal-600">
-                                            <Microscope className="w-6 h-6" />
-                                        </div>
-                                        <div>
-                                            <div className="text-2xl font-bold text-slate-900">99.9%</div>
-                                            <div className="text-xs text-slate-500 uppercase font-semibold">Purity</div>
-                                        </div>
-                                    </div>
-                                    <div className="bg-slate-900 rounded-xl shadow-sm p-6 flex flex-col justify-between text-white">
-                                        <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-white">
-                                            <ArrowRight className="w-6 h-6 rotate-45" />
-                                        </div>
-                                        <div>
-                                            <div className="text-2xl font-bold">24/7</div>
-                                            <div className="text-xs text-white/70 uppercase font-semibold">Monitoring</div>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-2 bg-white rounded-xl shadow-sm border border-slate-100 p-6 flex items-center gap-4">
-                                        <div className="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center text-teal-700 font-bold text-sm">GH</div>
-                                        <div>
-                                            <div className="text-sm font-bold text-slate-900">Origin Certified</div>
-                                            <div className="text-xs text-slate-500">Accra, Ghana Facility</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <img
+                                src="/images/bio.jpg"
+                                alt="Mayfair Biotech Facility"
+                                className="w-full h-full object-cover"
+                            />
                         </div>
                     </motion.div>
                 </div>

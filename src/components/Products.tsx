@@ -8,7 +8,7 @@ const products = [
         category: 'Hygiene',
         price: 'GHS 15.00',
         stock: 'In Stock',
-        image: 'https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?auto=format&fit=crop&q=80&w=600',
+        image: '/images/pad.jpg',
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ const products = [
         category: 'Daily Care',
         price: 'GHS 22.50',
         stock: 'Low Stock',
-        image: 'https://images.unsplash.com/photo-1600857062241-98e5dba7f214?auto=format&fit=crop&q=80&w=600',
+        image: '/images/soap.jpg',
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const products = [
         category: 'Paper Goods',
         price: 'GHS 12.00',
         stock: 'In Stock',
-        image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=600',
+        image: '/images/tissue.jpg',
     },
     {
         id: 4,
@@ -32,7 +32,7 @@ const products = [
         category: 'Protection',
         price: 'GHS 35.00',
         stock: 'In Stock',
-        image: 'https://images.unsplash.com/photo-1584483766114-2cea6facb57c?auto=format&fit=crop&q=80&w=600',
+        image: '/images/asn.jpg',
     },
 ];
 
