@@ -51,7 +51,7 @@ export default function Hero() {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1, delay: 0.2 }}
-                        className="relative hidden lg:block"
+                        className="relative mt-12 lg:mt-0"
                     >
                         <div className="relative rounded-2xl overflow-hidden bg-white shadow-xl shadow-slate-200 border border-slate-100 aspect-[4/3]">
                             <img
