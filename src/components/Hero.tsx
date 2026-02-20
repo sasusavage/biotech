@@ -11,8 +11,6 @@ export default function Hero() {
                     alt=""
                     className="w-full h-full object-cover"
                 />
-                {/* Light overlay for readability with slate text */}
-                <div className="absolute inset-0 bg-white/90 backdrop-blur-[2px]" />
             </div>
 
             {/* Calm Grid Pattern (Desktop) */}
