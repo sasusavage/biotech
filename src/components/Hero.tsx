@@ -37,8 +37,8 @@ export default function Hero() {
                             <span className="text-teal-700">Global Standards.</span>
                         </h1>
 
-                        <p className="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
-                            Mayfair Biotech leverages strategic West African infrastructure to deliver <span className="text-slate-900 font-medium">world-class therapeutics</span>. Precision engineering meets scalable production.
+                        <p className="text-lg text-white lg:text-slate-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                            Mayfair Biotech leverages strategic West African infrastructure to deliver <span className="text-white lg:text-slate-900 font-medium">world-class therapeutics</span>. Precision engineering meets scalable production.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
